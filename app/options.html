@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+	<title>Options | Intercom Chrome Extension</title>
+	<script src='/lib/jq.js'></script>
+	<script src='scripts/saveOptions.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="options">
+	<div class="container">
+		<h1>Intercom Chrome Extension Options</h1>
+
+		<!-- <br> -->
+		<p class="strong">What information do you want to appear on screen?</p>
+		<label><input type="radio" name="dataToReturn" value="return_WebSessions"> Number of web sessions</label><br>
+		<label><input type="radio" name="dataToReturn" value="return_Name"> Full Name</label><br>
+		<label><input type="radio" name="dataToReturn" value="return_Location"> Location Info</label><br>
+		<label><input type="radio" name="dataToReturn" value="return_DaysSignup"> Days since sign up</label><br>
+		<label><input type="radio" name="dataToReturn" value="return_Custom"> Custom attribute: <input type="text" placeholder="Custom Attribute" id="return_Custom"></input></label><br>
+
+		<br>
+		<p class="strong">Do you want the information visible inside your content or only in the poppup?</p>
+		<label><input type="radio" name="dataPresentation" value="show_Visible"> Visible</label><br>
+		<label><input type="radio" name="dataPresentation" value="show_onHover"> Only in the poppup</label><br>
+		<br>
+
+		<details><summary>Advanced options</summary>
+			<p class="strong">Is there an additional class you want to check on the page?</p>
+			<p>This is for more advanced users. The extension currently searches for all mailto links on the page. If you have a website which has email addresses outside of a mailto link, but within a specific class name, then enter it here.</p>
+			<input type="text" placeholder="Enter the class name you want to check, e.g. user-email" id="extraClassToCheck"></input>
+			<br>
+
+			<div class="optionsBox">
+				<h3>Intercom API Credentials</h3>
+				<p><a href="/welcome.html">Walk through finding and saving your Intercom API credentials here.</a></p>
+				<p class="strong">Intercom App ID</p>
+				<input style="width: 200px;" type="text" placeholder="Intercom App ID" id="username"></input>
+				<p class="strong">Intercom Personal Access Token</p>
+				<input type="text" placeholder="Personal Access Token" id="password"></input>
+			</div>
+		</details>
+		<br>
+
+		<p style="display: none;" id="error"></p>
+		<p style="display: none;" id="success">Options saved!</p>
+
+		<a class="button" id="save" href="#">Save options</a>
+		<a class="button grey" id="close" href="#">Close this window</a>
+
+		<script src='scripts/footer.js'></script>
+	</div>
+</body>
+</html>

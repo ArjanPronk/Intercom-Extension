@@ -1,0 +1,31 @@
+body {padding: 40px 20px 20px 20px; font-size: 13px; font-family: 'Helvetica'; background:#fff;}
+.container {margin: 30px auto; width: 600px;}
+
+input[type="text"] {display: block; padding: 8px 10px; color: #153E71; background: #fff; width: 100%; font-size: 14px; box-sizing: border-box;}
+
+h1 {font-size: 24px;}
+
+.button {padding: 10px 30px; text-decoration: none; background-color: #1f8ceb; color: #fff; border: none; border-radius: 4px; display: block; margin-top: 15px; text-align: center;}
+.grey {background-color: #BBBBBB;}
+.optionsL,.optionsL:hover,.optionsL:visited {font-weight: bold; text-decoration: none; color: #1f8ceb;}
+
+#error {color: #a94442; background-color: #f2dede; border-color: #ebccd1;}
+#success {color: #3c763d; background-color: #dff0d8; border-color: #d6e9c6;}
+#warning {color: #8a6d3b; background-color: #fcf8e3; border-color: #faebcc;}
+#warning, #error, #success {text-align: left; border-radius: 0px; padding: 10px 10px;}
+.strong {font-weight: bold;}
+
+.footer {text-align: center;font-size: smaller;}
+.footer a {text-decoration: none; outline:none; color: inherit;}
+a.feedback {font-weight: bold; color: #1f8ceb;}
+a {color: #1f8ceb;}
+
+input#return_Custom {display: inline-block; width: 150px; padding: 2px 3px;}
+
+li {padding-bottom: 15px;}
+details {background: #f5f5f5; padding: 10px;}
+
+body.options {font-size: 15px;}
+body.options > .container {width: 700px;}
+
+.optionsBox {border: #CECECE 1px solid; padding: 10px;}

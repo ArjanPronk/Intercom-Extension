@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<title>Welcome! Intercom Chrome Extension</title>
+	<script src='/lib/jq.js'></script>
+	<script src='scripts/saveOptionsWelcome.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="options">
+	<div class="container">
+		<h1>Welcome to the Intercom Chrome Extension!</h1>
+		<br>
+		<p class="strong">To get started, you need to save your Intercom API credentials.</p>
+		<p>Your API credentials will be stored on your computer and the developers of this extension or any other parties will not have access to them. You can even check out the code of this application <a href="https://github.com/BrianH2/Intercom-Chrome-Extension">on Github here</a>.</p>
+
+		<details>
+		<summary>See step by step instructions to getting your Intercom API credentials</summary>
+		<p>To get and save your credentials follow these steps:</p>
+		<ol>
+			<li><a href="https://app.intercom.io/admins/sign_in">Sign into Intercom here</a></li>
+			<li>Hover on the person icon at the bottom left of the screen and click on "Settings"</li>
+			<li>Click on App settings in the top bar</li>
+			<li>Click on Developer Tools at the bottom of the page</li>
+			<li>Now copy the Personal Access Token and your intercom App Id into the  input field below and click save!</li>
+		</ol>
+		</details>
+
+		<br>
+		<p class="strong">Paste your Intercom App ID here:</p>
+		<input style="width: 200px;" type="text" placeholder="Intercom App ID" id="username" />
+		<p class="strong">Paste your Personal Access Token here:</p>
+		<input type="text" placeholder="Personal Access Token" id="password" />
+
+		<p style="display: none;" id="error">Please enter your App ID and Personal Access Token above.</p>
+		<p style="display: none;" id="success">Thank you, your API credentials are now saved! You can <a href="" id="close">close</a> this window and the extension will run anywhere it finds an email address.<br><br>To change other options, <a href="/options.html">click here.</a></p>
+
+		<p style="cursor: pointer; " class="button" id="save">Save your credentials!</p>
+
+		<br><br>
+		<script src='scripts/footer.js'></script>
+	</div>
+</body>
+</html>

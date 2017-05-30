@@ -1,0 +1,1 @@
+document.write('<br><div id="footer"><p class="footer">Based on <a href="https://github.com/BrianH2/Intercom-Chrome-Extension">Intercom-Chrome-Extension by BrianH2</a><p class="footer">This extension is not associated or endorsed by <a tabindex="-1" target="_blank" href="http://intercom.io">Intercom</a></p></div>');

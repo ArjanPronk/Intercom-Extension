@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Intercom Extension",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "See who is already in your intercom right in your browser, and contact them with 1 click",
+    "description": "The description of the application"
+  }
+}

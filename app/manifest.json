@@ -1,0 +1,29 @@
+{
+  "name": "__MSG_appName__",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "web_accessible_resources": ["images/*.png"],
+  "options_page": "options.html",
+  "icons": {
+    "16": "images/logo16.png",
+    "48": "images/logo48.png",
+    "128": "images/logo128.png"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["lib/jq.js", "scripts/check_emails.js"]
+  }],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/logo.png"},
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ],
+    "persistent": false
+},
+  "permissions": ["https://api.intercom.io/", "activeTab", "storage"]
+}
